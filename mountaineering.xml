@@ -1,0 +1,19 @@
+<!-- Mountaineering is a scenario in which enchantment tables are crafted with emeralds instead of diamonds. -->
+<map proto="1.4.2">
+<contributors> <!-- Creator of scenario include -->
+    <contributor uuid="bf331953-4f92-43ee-8abc-7544b8234936" contribution="Mountaineering"/> <!-- Vicei -->
+</contributors>
+<crafting> <!-- Enchantment tables crafted with emeralds -->
+    <shaped override="true">
+        <result material="enchantment table"/>
+        <shape>
+            <row>.B.</row>
+            <row>EOE</row>
+            <row>OOO</row>
+        </shape>
+        <ingredient symbol="O">obsidian</ingredient>
+        <ingredient symbol="B">book</ingredient>
+        <ingredient symbol="E">emerald</ingredient>
+    </shaped>
+</crafting>
+</map>
