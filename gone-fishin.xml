@@ -1,0 +1,11 @@
+<!-- Gone Fishin' is a scenario in which you spawn with a lucky, unbreakable fishing rod. -->
+<map proto="1.4.2">
+<contributors> <!-- Creator of scenario include -->
+    <contributor uuid="bf331953-4f92-43ee-8abc-7544b8234936" contribution="Gone Fishin'"/> <!-- Vicei -->
+</contributors>
+<kits>
+    <kit force="true" id="gone-fishin"> <!-- Lucky Rod -->
+        <item material="fishing rod" enchantments="luck:250;durability:250"/>
+        <item material="anvil" amount="20"/>
+    </kit>
+</map>
