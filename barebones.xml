@@ -1,0 +1,51 @@
+<!-- Barebones is a scenario in which iron is the highest tier. Anvils, enchantment tables and gapples are disabled.
+Upon player death, various helpful items drop. -->
+<map proto="1.4.2">
+<contributors> <!-- Creator of scenario include -->
+    <contributor uuid="bf331953-4f92-43ee-8abc-7544b8234936" contribution="Barebones"/> <!-- Vicei -->
+</contributors>
+<block-drops> <!-- All tiered ores drop iron -->
+    <rule>
+        <filter>
+            <any>
+                <material>diamond ore</material>
+                <material>gold ore</material>
+            </any>
+        </filter>
+        <drops>
+            <item material="iron ingot"/>
+        </drops>
+    </rule>
+</block-drops>
+<crafting> <!-- Anvils, gapples, enchantment tables cannot be crafted -->
+    <disable>anvil</disable>
+    <disable>golden apple</disable>
+    <disable>enchantment table</disable>
+</crafting>
+<kill-rewards> <!-- Give gapple, diamond, arrows, string for all kills -->
+    <kill-reward>
+        <item amount="32" material="arrow"/>
+        <item amount="1" material="diamond"/>
+        <item amount="2" material="string"/>
+        <item amount="1" material="golden apple"/>
+    </kill-reward>
+</kill-rewards>
+<regions> <!-- Disable all interaction GUIs for anvils and enchantment tables -->
+    <rectangle name="all-anvil-enchantment" min="-oo,-oo" max="oo,oo"/>
+    <apply use="deny-anvil" block="deny-anvil deny-enchants">
+        <region name="all-anvil-enchantment"/>
+    </apply>
+</regions>
+<filters>
+    <filter name="deny-anvil">
+        <deny>
+            <block>anvil</block>
+        </deny>
+    </filter>
+    <filter name="deny-enchants">
+        <deny>
+            <block>enchantment table</block>
+        </deny>
+    </filter>
+</filters>
+</map>
