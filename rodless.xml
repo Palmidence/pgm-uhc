@@ -1,0 +1,9 @@
+<!-- Rodless is a scenario in which fishing rods are disabled. -->
+<map proto="1.4.2">
+<contributors> <!-- Creator of scenario include -->
+    <contributor uuid="bf331953-4f92-43ee-8abc-7544b8234936" contribution="Rodless"/> <!-- Vicei -->
+</contributors>
+<crafting> <!-- Fishing rods cannot be crafted -->
+    <disable>fishing rod</disable>
+</crafting>
+</map>
