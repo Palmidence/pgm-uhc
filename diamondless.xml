@@ -1,0 +1,28 @@
+<!-- Diamondless is a scenario in which diamonds do not drop, but have a 50% chance of dropping gold. 
+Killing a player awards 4 gold and one diamond. -->
+<map proto="1.4.2">
+<contributors> <!-- Creator of scenario include -->
+    <contributor uuid="bf331953-4f92-43ee-8abc-7544b8234936" contribution="Diamondless"/> <!-- Vicei -->
+</contributors>
+<block-drops>
+    <rule>
+        <filter>
+            <any>
+                <material>diamond ore</material>
+            </any>
+        </filter>
+        <drops>
+            <item chance="0.50" material="gold ingot"/>
+        </drops>
+    </rule>
+</block-drops>
+<itemremove>  <!-- Diamonds cannot be shared -->
+    <item>diamond</item>
+</itemremove>
+<kill-rewards> <!-- Give 4 gold, 1 diamond for all kills -->
+    <kill-reward>
+        <item amount="4" material="gold ingot"/>
+        <item amount="1" material="diamond"/>
+    </kill-reward>
+</kill-rewards>
+</map>
