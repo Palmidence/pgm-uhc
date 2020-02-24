@@ -1,0 +1,9 @@
+<!-- Torchless is a scenario in which torches cannot be crafted. -->
+<map proto="1.4.0">
+<contributors> <!-- Creator of scenario include -->
+    <contributor uuid="bf331953-4f92-43ee-8abc-7544b8234936" contribution="Rodless"/> <!-- Vicei -->
+</contributors>
+<crafting> <!-- Torches cannot be crafted -->
+    <disable>torch</disable>
+</crafting>
+</map>
