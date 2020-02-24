@@ -1,6 +1,6 @@
 <!-- Barebones is a scenario in which iron is the highest tier. Anvils, enchantment tables and gapples are disabled.
 Upon player death, various helpful items drop. -->
-<map proto="1.4.2">
+<map proto="1.4.0">
 <contributors> <!-- Creator of scenario include -->
     <contributor uuid="bf331953-4f92-43ee-8abc-7544b8234936" contribution="Barebones"/> <!-- Vicei -->
 </contributors>
